@@ -1,0 +1,19 @@
+def get_db():
+		from gluon.dal import DAL
+		dbpath = '/home/Downloads/web2py/applications/sserv/databases/'
+		return DAL('sqlite://storage.sqlite',auto_import=True)
+
+def index():
+	
+		db=get_db()
+		dbobj = db.usrtable
+		msgs = dbobj.id
+		q = msgs != None
+		s = db(q)
+		rows = s.select()
+		arr =[]
+		for row in rows:
+			arr.append(row.usr+" : "+row.emailid+" : "+row.aid)
+		return arr
+		
+

@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+def get_db():
+		from gluon.dal import DAL
+		return DAL('sqlite://storage.sqlite',auto_import=True)
+
+def index():
+	import re
+	usrr="New User"
+	emailid="amangupta53@gmail.com"
+	db=get_db()
+	print "usr3: got vars and dB"
+	rec=db(db.usrtable._emailid=="").update(usrname=usrr)
+	print "usr3: updating...2/2"
+	print "usr3: update complete"
+	db.commit()
+	return "set"+rec

@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+def get_db():
+		from gluon.dal import DAL
+		return DAL('sqlite://storage.sqlite',auto_import=True)
+
+def index():
+	import re
+	if request.vars['key'] != "fjnFF2rfaads32edfa#@":
+		return "Error 504"
+	else:
+		usrr=request.vars['usr']
+		emailid=request.vars['emailid']
+		db=get_db()
+		print "usr3: got vars and dB"
+		indexer=0
+		for row in db().select(db.usrtable.ALL):
+			print "usr3: inside for"
+			if row.emailid==emailid:
+				print "usr3: Match found"
+				indexer=row.id
+			print "usr3: nearly outside for"
+		print "usr3: updating...1/2, index="+indexer
+		rec=db.urstable(db.usrtable._id==indexer).select().update_record(usr=usrr)
+		print "usr3: updating...2/2"
+		print "usr3: update complete"
+		return "set"

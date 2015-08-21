@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+def get_db():
+		from gluon.dal import DAL
+		return DAL('sqlite://storage.sqlite',auto_import=True)
+
+def index():
+	import re
+	if request.vars['key'] != "fjnFF2rfaads32edfa#@":
+		return "Error 504"
+	else:
+		usr=request.vars['usr']
+		aid=request.vars['aid']
+		emailid=request.vars['emailid']
+		db=get_db()
+		flagemail=0
+		index=0		
+		for row in db.select(db.usrtable.ALL):
+			if re.match(row.emailid,email,re.IGNORECASE):
+				flagemail=1
+				index=row.id
+		if flagemail==1:
+			db(db.usrtable._id==index).delete()
+		db.usrtable.insert(usr=usr,aid=aid,emailid=emailid)

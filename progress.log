@@ -1,0 +1,23 @@
+[2015-06-29 14:42:45] START
+[2015-06-29 14:54:38] EDIT ChatterBox/models/db.py: 2
+[2015-06-29 14:54:50] EDIT ChatterBox/models/db.py: 0
+[2015-06-30 22:25:51] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-06-30 22:26:37] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-06-30 22:26:50] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-06-30 22:30:33] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-06-30 22:33:03] CREATE usr1.py: 0
+[2015-06-30 22:48:06] EDIT ChatterBox/controllers/usr1.py: 0
+[2015-06-30 22:48:12] EDIT ChatterBox/controllers/usr1.py: 0
+[2015-06-30 23:27:35] EDIT ChatterBox/models/db.py: 0
+[2015-06-30 23:48:34] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-06-30 23:50:57] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-06-30 23:51:11] EDIT ChatterBox/controllers/usr2.py: 1
+[2015-06-30 23:52:12] EDIT ChatterBox/controllers/usr2.py: -1
+[2015-06-30 23:52:22] EDIT ChatterBox/controllers/usr2.py: 0
+[2015-07-01 01:39:12] EDIT ChatterBox/controllers/usr3.py: 0
+[2015-07-03 23:00:10] EDIT ChatterBox/controllers/usr3.py: 0
+[2015-07-03 23:48:09] EDIT ChatterBox/controllers/usr3.py: 0
+[2015-07-03 23:50:53] EDIT ChatterBox/controllers/usr3.py: 0
+[2015-07-03 23:52:20] EDIT ChatterBox/controllers/usr3.py: 0
+[2015-07-13 21:15:27] CREATE popusrs.py: 0
+[2015-07-13 21:33:56] EDIT ChatterBox/controllers/popusrs.py: 0
